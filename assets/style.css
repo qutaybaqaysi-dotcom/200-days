@@ -42,8 +42,18 @@ body {
 .enter:hover, .enter:focus-visible { border-color: #f2f2f2; }
 
 /* Viewer */
-.viewer main { width: 100%; max-width: 737px; text-align: center; }
-figure { margin: 0; }
+/* The stage is as wide as the window allows, but never so tall that the
+   caption and controls (--chrome) are pushed off screen. */
+.viewer {
+  --chrome: 7.5rem;
+  padding: 1rem;
+}
+.viewer main { width: 100%; text-align: center; }
+figure {
+  margin: 0 auto;
+  width: min(100%, calc((100vh - 2rem - var(--chrome)) * 737 / 492));
+  width: min(100%, calc((100dvh - 2rem - var(--chrome)) * 737 / 492));
+}
 .frame {
   position: relative;
   width: 100%;
