@@ -1,0 +1,84 @@
+*, *::before, *::after { box-sizing: border-box; }
+
+html, body {
+  margin: 0;
+  min-height: 100%;
+  background: #1f1f1f;
+  color: #d8d8d8;
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem 1rem;
+}
+
+/* Landing */
+.statement {
+  max-width: 34rem;
+  font-size: 1.05rem;
+  line-height: 1.7;
+  text-align: center;
+}
+.statement p { margin: 0 0 1.25rem; }
+.signature { font-style: italic; }
+.enter {
+  display: inline-block;
+  margin-top: 1rem;
+  color: #f2f2f2;
+  text-decoration: none;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  font-size: 0.85rem;
+  border-bottom: 1px solid #666;
+  padding-bottom: 2px;
+}
+.enter:hover, .enter:focus-visible { border-color: #f2f2f2; }
+
+/* Viewer */
+.viewer main { width: 100%; max-width: 737px; text-align: center; }
+figure { margin: 0; }
+.frame {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 737 / 492;
+  background: #111;
+}
+.frame img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  display: block;
+}
+#front { opacity: 1; }
+#front.fading { transition: opacity 0.9s linear; }
+figcaption {
+  margin-top: 1rem;
+  font-size: 1rem;
+  letter-spacing: 0.02em;
+}
+.controls {
+  margin-top: 1.5rem;
+  display: flex;
+  justify-content: center;
+  gap: 0.75rem;
+}
+.controls button {
+  font: inherit;
+  font-size: 0.85rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #d8d8d8;
+  background: transparent;
+  border: 1px solid #555;
+  padding: 0.45rem 1.1rem;
+  cursor: pointer;
+}
+.controls button:hover:not(:disabled),
+.controls button:focus-visible { border-color: #d8d8d8; color: #fff; }
+.controls button:disabled { opacity: 0.35; cursor: default; }
