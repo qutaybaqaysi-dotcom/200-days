@@ -21,10 +21,13 @@ body {
   max-width: 34rem;
   font-size: 1.05rem;
   line-height: 1.7;
-  text-align: center;
 }
 .statement p { margin: 0 0 1.25rem; }
-.signature { font-style: italic; }
+.statement h1 {
+  margin: 0 0 1.25rem;
+  font-size: inherit;
+  font-weight: normal;
+}
 .enter {
   display: inline-block;
   margin-top: 1rem;
