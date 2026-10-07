@@ -26,7 +26,7 @@ body {
 .statement h1 {
   margin: 0 0 1.25rem;
   font-size: inherit;
-  font-weight: normal;
+  font-weight: bold;
 }
 .enter {
   display: inline-block;
