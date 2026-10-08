@@ -36,10 +36,16 @@ body {
   letter-spacing: 0.15em;
   text-transform: uppercase;
   font-size: 0.85rem;
+  font-family: inherit;
+  background: none;
+  border: 0;
   border-bottom: 1px solid #666;
-  padding-bottom: 2px;
+  border-radius: 0;
+  padding: 0 0 2px;
+  cursor: pointer;
 }
 .enter:hover, .enter:focus-visible { border-color: #f2f2f2; }
+.statement .blocked { margin: 1rem 0 0; color: #999; font-size: 0.85rem; }
 
 /* Viewer */
 /* The stage is as wide as the window allows, but never so tall that the
