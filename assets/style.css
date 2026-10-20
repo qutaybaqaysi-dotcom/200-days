@@ -20,9 +20,9 @@ body {
 .statement {
   max-width: 34rem;
   font-size: 1.05rem;
-  line-height: 1.7;
+  line-height: 1.6;
 }
-.statement p { margin: 0 0 1.25rem; }
+.statement p { margin: 0 0 1.1rem; }
 .statement h1 {
   margin: 0 0 1.25rem;
   font-size: inherit;
