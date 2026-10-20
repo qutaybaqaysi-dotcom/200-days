@@ -48,7 +48,7 @@
     front.alt = back.alt = captionFor(index);
     playBtn.disabled = playing || atEnd;
     pauseBtn.disabled = !playing;
-    nextBtn.disabled = atEnd;
+    nextBtn.disabled = atEnd || playing;
   }
 
   function showInstant(i) {
